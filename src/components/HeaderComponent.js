@@ -3,7 +3,6 @@ import {FaShopify} from 'react-icons/fa'
 import NavComponent from './NavComponent'
 import CategoriesNav from './CategoriesNav'
 import { Link } from 'react-router-dom'
-import AppContext from '../context/AppContext/AppContext'
 
 export default function HeaderComponent() {
 
@@ -15,7 +14,7 @@ export default function HeaderComponent() {
           <Link to='/'>
             <div className='flex items-center gap-2'>
                 <FaShopify className='text-white' size={36}/>
-                <h1 className='text-white text-xl font-semibold'>My-Mart</h1>
+                <h1 className='text-white text-xl font-semibold'>Shopster⭐</h1>
             </div>
           </Link>
             <NavComponent/>

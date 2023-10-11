@@ -16,6 +16,7 @@ export default function AppState({children}) {
         } else {
           setCartItems([...cartItems,{...product,quantity:1}])
         }
+        toast.success('Product added to Cart successfully...')
     }
 
     const removeProductFromCart = (product) => {
@@ -43,7 +44,7 @@ export default function AppState({children}) {
       if(!existingProduct){
         setWishlist([...wishlist,product])
         toast.success('Product added successfully')
-      }toast.success('Product already available in wishlist...')
+      }else{toast.success('Product already available in wishlist...')}
     }
 
     const removeProductFromWishlist = (product) => {
